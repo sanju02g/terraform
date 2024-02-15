@@ -6,8 +6,8 @@ terraform {
     }
   }
 }
-module "sandbox" {
-    source = "./modules"
+module "sandbox" {                    //-->root module
+    source = "./modules"              //-->child module
     prefix = "sandbox"
     bucketname="prowiz-bucket-sandbox"
     region="eu-central-1"
